@@ -1,172 +1,182 @@
 
-import { percursos as percursosData } from './data.js';
+import { percursos } from './data.js';
 
-const percursos = percursosData;
-
-let currentPercurso = 'percurso-1';
-let currentNivel = 'ensinoFundamental';
-
-const percursoNav = document.getElementById('percurso-nav');
-const nivelNav = document.getElementById('nivel-nav');
-const contentContainer = document.getElementById('content-container');
-const subtitleContainer = document.getElementById('subtitle-container');
-const zoomDatashowBtn = document.getElementById('zoom-datashow');
-const zoomTvBtn = document.getElementById('zoom-tv');
-
-function createSupportText(supportText) {
-    if (!supportText) return '';
-    const paragraphs = supportText.content.map(p => `<p class="text-justify mb-3">${p}</p>`).join('');
-    return `
-        <div class="support-text">
-            <h4 class="font-bold mb-2">${supportText.title}</h4>
-            ${paragraphs}
-        </div>
-    `;
-}
-
-function createQuestionCard(question, momentoIndex, questionIndex) {
-    const card = document.createElement('div');
-    card.className = 'question-card';
-
-    const questionNumber = questionIndex + 1;
-    let optionsHTML = '';
-    if (question.type === 'objective') {
-        optionsHTML = `<ul class="options-list mt-4">` +
-            question.options.map((option, index) =>
-                `<li onclick="window.app.selectOption(this, ${question.answer === index})">${option}</li>`
-            ).join('') +
-            `</ul>`;
-    }
-
-    let subjectiveHTML = '';
-    if (question.type === 'subjective') {
-        subjectiveHTML = `<textarea class="w-full mt-4 p-3 border-transparent rounded-md bg-slate-700 text-slate-200 placeholder-slate-400 focus:ring-2 focus:ring-indigo-500" rows="4" placeholder="Escreva sua resposta aqui..."></textarea>`;
-    }
-
-    card.innerHTML = `
-        <h3 class="text-lg font-semibold mb-2">Questão ${questionNumber} <span class="text-sm font-normal text-pink-600" style="color: #db2777;">(${question.descriptor})</span></h3>
-        ${createSupportText(question.supportText)}
-        <p class="question-prompt font-semibold text-justify">${question.prompt}</p>
-        ${optionsHTML}
-        ${subjectiveHTML}
-        <a href="javascript:void(0)" onclick="window.app.toggleAnswer('${question.id}-answer')" class="text-sm text-indigo-600 hover:underline mt-2 inline-block">💡 Ver Gabarito</a>
-        <div id="${question.id}-answer" class="answer"><p>${question.answer}</p></div>
-    `;
-     if (question.type === 'objective') {
-        const answerEl = card.querySelector('.answer');
-        if (answerEl) {
-            answerEl.innerHTML = `<p>${question.options[question.answer]}</p>`;
-        }
-    }
-
-    return card;
-}
-
-function renderContent() {
-    if (!contentContainer || !subtitleContainer) return;
-    contentContainer.innerHTML = '';
-    const percursoData = percursos[currentPercurso];
-    const nivelData = percursoData[currentNivel];
-
-    subtitleContainer.innerHTML = `
-        <span class="text-xl text-slate-600">${percursoData.name} – ${nivelData.name}</span>
-    `;
-
-    Object.values(nivelData.momentos).forEach((momento, momentoIndex) => {
-        if (momento.questoes.length === 0) return;
-
-        const section = document.createElement('section');
-        section.className = 'mb-12';
-
-        const header = document.createElement('div');
-        header.className = 'p-4 rounded-lg mb-6';
-        header.style.backgroundColor = '#eef2ff';
-        header.innerHTML = `<h2 class="text-xl md:text-2xl font-bold" style="color: #4338ca;">${momento.name}</h2>`;
-        section.appendChild(header);
-
-        momento.questoes.forEach((q, qIndex) => {
-            section.appendChild(createQuestionCard(q, momentoIndex, qIndex));
-        });
-
-        contentContainer.appendChild(section);
-    });
-
-    updateNivelNav();
-}
-
-function updatePercursoNav() {
-    if (!percursoNav) return;
-    percursoNav.innerHTML = '';
-    Object.keys(percursos).forEach(percursoId => {
-        const button = document.createElement('button');
-        button.className = 'percurso-btn';
-        button.textContent = percursos[percursoId].name;
-        if (percursoId === currentPercurso) {
-            button.classList.add('active');
-        }
-        button.onclick = () => {
-            currentPercurso = percursoId;
-            updatePercursoNav();
-            renderContent();
-        };
-        percursoNav.appendChild(button);
-    });
-}
-
-function updateNivelNav() {
-    if (!nivelNav) return;
-    nivelNav.innerHTML = '';
-    const percursoData = percursos[currentPercurso];
-    Object.keys(percursoData).filter(key => key !== 'name').forEach(nivelId => {
-        const button = document.createElement('button');
-        button.className = 'nivel-btn';
-        const nivel = percursoData[nivelId];
-        button.textContent = nivel.name;
-        if (nivelId === currentNivel) {
-            button.classList.add('active');
-        }
-        button.onclick = () => {
-            currentNivel = nivelId;
-            renderContent();
-        };
-        nivelNav.appendChild(button);
-    });
-}
-
-function setZoom(mode) {
-    const html = document.documentElement;
-    if (!zoomTvBtn || !zoomDatashowBtn) return;
-    if (mode === 'tv') {
-        html.style.fontSize = '1.4625rem';
-        zoomTvBtn.classList.add('active');
-        zoomDatashowBtn.classList.remove('active');
-    } else {
-        html.style.fontSize = '1.125rem';
-        zoomDatashowBtn.classList.add('active');
-        zoomTvBtn.classList.remove('active');
-    }
-}
-
-// Expose functions to global scope for inline event handlers
-window.app = {
-    selectOption: (element, isCorrect) => {
-        const parent = element.parentNode;
-        if (!parent) return;
-        const options = parent.querySelectorAll('li');
-        options.forEach(opt => opt.classList.remove('selected', 'correct', 'incorrect'));
-        element.classList.add('selected');
+const app = {
+    state: {
+        currentPercurso: 'Percurso Formativo I',
+        currentNivel: 'ensinoMedio',
     },
-    toggleAnswer: (questionId) => {
-        const answerDiv = document.getElementById(questionId);
-        if (!answerDiv) return;
-        answerDiv.style.display = (answerDiv.style.display === 'block') ? 'none' : 'block';
+    init() {
+        this.render();
+        this.addEventListeners();
+    },
+    render() {
+        this.renderContent();
+    },
+    renderContent() {
+        const percursoData = percursos[this.state.currentPercurso];
+        if (!percursoData) {
+            console.error('Percurso não encontrado:', this.state.currentPercurso);
+            return;
+        }
+
+        const nivelData = percursoData[this.state.currentNivel];
+        if (!nivelData) {
+            console.error('Nível não encontrado:', this.state.currentNivel);
+            return;
+        }
+        
+        this.updateHeader(percursoData, nivelData);
+        this.updatePercursoNav();
+        this.updateNivelNav();
+
+        const contentContainer = document.getElementById('content-container');
+        if (contentContainer) {
+            contentContainer.innerHTML = '';
+            nivelData.momentos.forEach(momento => {
+                const momentoSection = document.createElement('section');
+                momentoSection.innerHTML = `<h2 class="text-xl md:text-2xl font-bold mb-4" style="color: #4338ca;">${momento.titulo}</h2>`;
+                momento.questoes.forEach(questao => {
+                    momentoSection.appendChild(this.createQuestionCard(questao));
+                });
+                contentContainer.appendChild(momentoSection);
+            });
+        }
+    },
+    updateHeader(percursoData, nivelData) {
+        const subtitleContainer = document.getElementById('subtitle-container');
+        if (subtitleContainer) {
+            subtitleContainer.innerHTML = `<h2 class="text-lg md:text-xl font-semibold text-slate-600">${this.state.currentPercurso} - ${nivelData.titulo}</h2>`;
+        }
+    },
+    updatePercursoNav() {
+        const percursoNav = document.getElementById('percurso-nav');
+        if (percursoNav) {
+            percursoNav.innerHTML = Object.keys(percursos).map(percursoId => `
+                <button class="percurso-btn ${this.state.currentPercurso === percursoId ? 'active' : ''}" data-percurso="${percursoId}">
+                    ${percursoId}
+                </button>
+            `).join('');
+            this.addPercursoNavListeners();
+        }
+    },
+    updateNivelNav() {
+        const nivelNav = document.getElementById('nivel-nav');
+        if (nivelNav) {
+            nivelNav.innerHTML = `
+                <button class="nivel-btn ${this.state.currentNivel === 'ensinoMedio' ? 'active' : ''}" data-nivel="ensinoMedio">Ensino Médio</button>
+                <button class="nivel-btn ${this.state.currentNivel === 'ensinoFundamental' ? 'active' : ''}" data-nivel="ensinoFundamental">Ensino Fundamental</button>
+            `;
+            this.addNivelNavListeners();
+        }
+    },
+    createQuestionCard(question) {
+        const card = document.createElement('div');
+        card.className = 'question-card';
+        card.id = question.id;
+
+        let supportTextHtml = '';
+        if (question.supportText && question.supportText.content) {
+            supportTextHtml = `<div class="support-text">${question.supportText.content}</div>`;
+        }
+
+        let questionHtml = '';
+        if (question.type === 'subjetiva') {
+            questionHtml = `
+                <p class="mb-4">${question.enunciado}</p>
+                <textarea class="w-full p-2 border rounded" style="background-color: #333; color: #fff;" placeholder="Escreva sua resposta aqui..."></textarea>
+            `;
+        } else if (question.type === 'objetiva') {
+            const optionsHtml = question.options.map((option, index) => {
+                const letter = String.fromCharCode(97 + index); // a, b, c, d
+                return `<li data-option="${letter}">${letter}) ${option}</li>`;
+            }).join('');
+            questionHtml = `
+                <p class="mb-4">${question.enunciado}</p>
+                <ul class="options-list">${optionsHtml}</ul>
+            `;
+        }
+        
+        const answerHtml = `<div class="answer"><p><strong>Gabarito:</strong> ${question.gabarito}</p></div>`;
+        
+        card.innerHTML = `
+            <h3 class="font-bold text-lg mb-2">Questão ${question.numero} <span class="font-normal text-sm text-slate-500">(${question.descritor})</span></h3>
+            ${supportTextHtml}
+            ${questionHtml}
+            <button class="mt-4 text-sm font-semibold text-indigo-600 hover:text-indigo-800">💡 Ver Gabarito</button>
+            ${answerHtml}
+        `;
+
+        // Add event listeners for the card
+        if (question.type === 'objetiva') {
+            const options = card.querySelectorAll('.options-list li');
+            options.forEach(option => {
+                option.addEventListener('click', () => {
+                    options.forEach(opt => opt.classList.remove('selected'));
+                    option.classList.add('selected');
+                });
+            });
+        }
+        
+        const toggleButton = card.querySelector('button');
+        const answerDiv = card.querySelector('.answer');
+        if (toggleButton && answerDiv) {
+            toggleButton.addEventListener('click', () => {
+                answerDiv.style.display = answerDiv.style.display === 'block' ? 'none' : 'block';
+            });
+        }
+        
+        return card;
+    },
+    addEventListeners() {
+        document.getElementById('zoom-datashow')?.addEventListener('click', () => this.setZoom('datashow'));
+        document.getElementById('zoom-tv')?.addEventListener('click', () => this.setZoom('tv'));
+    },
+    addPercursoNavListeners() {
+        document.querySelectorAll('#percurso-nav .percurso-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const target = e.target;
+                if (target instanceof HTMLElement) {
+                    const percursoId = target.dataset.percurso;
+                    if (percursoId) {
+                        this.state.currentPercurso = percursoId;
+                        this.render();
+                    }
+                }
+            });
+        });
+    },
+    addNivelNavListeners() {
+        document.querySelectorAll('#nivel-nav .nivel-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                 const target = e.target;
+                if (target instanceof HTMLElement) {
+                    const nivelId = target.dataset.nivel;
+                    if (nivelId) {
+                        this.state.currentNivel = nivelId;
+                        this.render();
+                    }
+                }
+            });
+        });
+    },
+    setZoom(size) {
+        const html = document.documentElement;
+        const datashowBtn = document.getElementById('zoom-datashow');
+        const tvBtn = document.getElementById('zoom-tv');
+
+        if (size === 'datashow') {
+            html.style.fontSize = '1.125rem'; // 18px
+            datashowBtn?.classList.add('active');
+            tvBtn?.classList.remove('active');
+        } else if (size === 'tv') {
+            html.style.fontSize = '1.5rem'; // 24px
+            datashowBtn?.classList.remove('active');
+            tvBtn?.classList.add('active');
+        }
     }
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    if (!zoomDatashowBtn || !zoomTvBtn) return;
-    zoomDatashowBtn.onclick = () => setZoom('datashow');
-    zoomTvBtn.onclick = () => setZoom('tv');
-    updatePercursoNav();
-    renderContent();
+    app.init();
 });
