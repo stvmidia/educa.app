@@ -1,4 +1,3 @@
-
 // Fix: Added type declaration for window.app to avoid TypeScript errors on global scope.
 declare global {
     interface Window {
@@ -66,7 +65,7 @@ let currentNivel = 'ensinoFundamental';
 const percursoNav = document.getElementById('percurso-nav');
 const nivelNav = document.getElementById('nivel-nav');
 const contentContainer = document.getElementById('content-container');
-const subtitle = document.getElementById('subtitle');
+const subtitleContainer = document.getElementById('subtitle-container');
 const zoomDatashowBtn = document.getElementById('zoom-datashow');
 const zoomTvBtn = document.getElementById('zoom-tv');
 
@@ -123,13 +122,15 @@ function createQuestionCard(question: Question, momentoIndex: number, questionIn
 }
 
 function renderContent() {
-    if (!contentContainer || !subtitle) return;
+    if (!contentContainer || !subtitleContainer) return;
     contentContainer.innerHTML = '';
     const percursoData = percursos[currentPercurso];
     // Fix: Cast nivelData to Nivel to allow property access.
     const nivelData = percursoData[currentNivel] as Nivel;
 
-    subtitle.textContent = `${percursoData.name} - ${nivelData.name}`;
+    subtitleContainer.innerHTML = `
+        <span class="text-xl text-slate-600">${percursoData.name} – ${nivelData.name}</span>
+    `;
 
     Object.values(nivelData.momentos).forEach((momento, momentoIndex) => {
         // Fix: 'momento' is now correctly typed as Momento, so 'questoes' is accessible, fixing error at line 69.
@@ -161,7 +162,7 @@ function updatePercursoNav() {
     percursoNav.innerHTML = '';
     Object.keys(percursos).forEach(percursoId => {
         const button = document.createElement('button');
-        button.className = 'nav-btn';
+        button.className = 'percurso-btn';
         button.textContent = percursos[percursoId].name;
         if (percursoId === currentPercurso) {
             button.classList.add('active');
@@ -181,7 +182,7 @@ function updateNivelNav() {
     const percursoData = percursos[currentPercurso];
     Object.keys(percursoData).filter(key => key !== 'name').forEach(nivelId => {
         const button = document.createElement('button');
-        button.className = 'nav-btn';
+        button.className = 'nivel-btn';
         const nivel = percursoData[nivelId] as Nivel;
         button.textContent = nivel.name;
         if (nivelId === currentNivel) {

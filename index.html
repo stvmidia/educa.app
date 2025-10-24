@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR" style="font-size: 1.125rem;">
 <head>
@@ -70,19 +69,32 @@
             background-color: #e0e0e0;
             color: #374151;
         }
-        .nav-btn {
-            padding: 0.5rem 1rem;
+        .percurso-btn {
+            padding: 0.5rem 1.5rem;
             border-radius: 0.5rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.2s ease-in-out;
-            border: 2px solid transparent;
-            background-color: white;
-            color: #4f46e5;
-        }
-        .nav-btn.active {
             background-color: #4f46e5;
             color: white;
+        }
+        .nivel-btn {
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+        .nivel-btn.active {
+            background-color: #4f46e5;
+            color: white;
+        }
+        .nivel-btn:not(.active) {
+            background-color: transparent;
+            color: #4f46e5;
+        }
+        .nivel-btn:not(.active):hover {
+            color: #312e81;
         }
     </style>
 </head>
@@ -90,7 +102,9 @@
     <div class="container mx-auto p-4 sm:p-6 md:p-8">
         <header class="text-center mb-8 bg-white p-6 rounded-xl shadow-md">
             <h1 class="text-2xl md:text-3xl font-bold" style="color: #4338ca;">Sequência Didática de Língua Portuguesa</h1>
-            <div id="subtitle" class="text-md text-slate-600 mt-2"></div>
+            <div id="subtitle-container" class="flex justify-center items-center mt-4">
+                <!-- Subtitle will be injected here -->
+            </div>
             <div class="mt-4 flex justify-center items-center space-x-2">
                 <span class="text-sm font-semibold text-slate-500">Zoom:</span>
                 <button id="zoom-datashow" class="zoom-btn active">Datashow</button>
@@ -98,7 +112,7 @@
             </div>
         </header>
 
-        <nav class="mb-8 p-4 bg-white rounded-xl shadow-md space-y-4">
+        <nav class="mb-8 p-4 bg-white rounded-xl shadow-md">
             <div id="percurso-nav" class="flex flex-wrap justify-center gap-2">
                 <!-- Percurso buttons will be injected here -->
             </div>
