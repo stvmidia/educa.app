@@ -34,7 +34,7 @@ const app = {
     },
     setZoom(zoomLevel) {
         if (zoomLevel === 'datashow') {
-            this.elements.html.style.fontSize = '1.5rem'; // 24px
+            this.elements.html.style.fontSize = '1.725rem'; // Increased by 15% from 1.5rem
             this.elements.zoomDatashowBtn.classList.add('active');
             this.elements.zoomTvBtn.classList.remove('active');
         } else if (zoomLevel === 'tv') {
