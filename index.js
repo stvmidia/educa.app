@@ -112,6 +112,42 @@ const app = {
             this.elements.nivelNav.appendChild(button);
         });
     },
+    createSupportTextContainer(supportText) {
+        const container = document.createElement('div');
+        // Reuse card styling for a consistent look, but with less vertical margin.
+        container.className = 'question-card mb-4';
+
+        let finalImageUrl = supportText.imageUrl;
+        if (supportText.gdriveImageUrl) {
+            const gdriveUrl = supportText.gdriveImageUrl;
+            const match = gdriveUrl.match(/file\/d\/([^/]+)/);
+            if (match && match[1]) {
+                const fileId = match[1];
+                finalImageUrl = `https://drive.google.com/uc?export=view&id=${fileId}`;
+            }
+        }
+
+        let content = '';
+        if (finalImageUrl) {
+            const altText = supportText.content || `Imagem de apoio.`;
+            content += `
+                <div>
+                    ${supportText.title ? `<h4 class="font-bold text-xl mb-2">${supportText.title}</h4>` : ''}
+                    <div class="p-2 border rounded-lg bg-slate-50">
+                        <img src="${finalImageUrl}" alt="${altText}" class="w-full h-auto object-contain rounded-md">
+                    </div>
+                </div>`;
+        } else if (typeof supportText.content === 'string') {
+            // Re-using support-text class but overriding some properties for better integration
+            content += `
+                <div class="support-text prose max-w-none !p-0 !border-none !bg-transparent">
+                    ${supportText.title ? `<h4 class="font-bold text-xl mb-2">${supportText.title}</h4>` : ''}
+                    <div class="whitespace-pre-wrap">${supportText.content}</div>
+                </div>`;
+        }
+        container.innerHTML = content;
+        return container;
+    },
     renderQuestions(momentos) {
         momentos.forEach(momento => {
             const momentoTitle = document.createElement('h2');
@@ -119,8 +155,21 @@ const app = {
             momentoTitle.textContent = momento.title;
             momentoTitle.style.color = '#4338ca';
             this.elements.contentContainer.appendChild(momentoTitle);
+            
+            let lastRenderedSupportTextContent = null;
 
             momento.questions.forEach(question => {
+                const currentSupportTextJSON = question.supportText ? JSON.stringify(question.supportText) : null;
+
+                if (question.supportText && currentSupportTextJSON !== lastRenderedSupportTextContent) {
+                    const supportTextContainer = this.createSupportTextContainer(question.supportText);
+                    this.elements.contentContainer.appendChild(supportTextContainer);
+                    lastRenderedSupportTextContent = currentSupportTextJSON;
+                } else if (!question.supportText) {
+                    // Reset if the current question has no support text, so the next one with text will render it.
+                    lastRenderedSupportTextContent = null;
+                }
+                
                 const questionCard = this.createQuestionCard(question);
                 this.elements.contentContainer.appendChild(questionCard);
             });
@@ -136,36 +185,6 @@ const app = {
                 <span class="text-sm font-semibold bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">${question.descriptor}</span>
             </div>
         `;
-        
-        if (question.supportText) {
-            let finalImageUrl = question.supportText.imageUrl;
-
-            if (question.supportText.gdriveImageUrl) {
-                const gdriveUrl = question.supportText.gdriveImageUrl;
-                const match = gdriveUrl.match(/file\/d\/([^/]+)/);
-                if (match && match[1]) {
-                    const fileId = match[1];
-                    finalImageUrl = `https://drive.google.com/uc?export=view&id=${fileId}`;
-                }
-            }
-            
-            if (finalImageUrl) {
-                const altText = question.supportText.content || `Imagem de apoio para a questão.`;
-                content += `
-                    <div class="mb-4">
-                        ${question.supportText.title ? `<h4 class="font-bold text-lg mb-2">${question.supportText.title}</h4>` : ''}
-                        <div class="p-2 border rounded-lg bg-slate-50">
-                            <img src="${finalImageUrl}" alt="${altText}" class="w-full h-auto object-contain rounded-md">
-                        </div>
-                    </div>`;
-            } else if (typeof question.supportText.content === 'string') {
-                content += `
-                    <div class="support-text prose max-w-none">
-                        ${question.supportText.title ? `<h4 class="font-bold text-lg mb-2">${question.supportText.title}</h4>` : ''}
-                        <div class="whitespace-pre-wrap">${question.supportText.content}</div>
-                    </div>`;
-            }
-        }
         
         content += `<p class="mt-4 mb-4 font-bold">${question.statement}</p>`;
 
