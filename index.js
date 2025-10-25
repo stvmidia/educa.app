@@ -1,3 +1,4 @@
+
 import { percursos } from './data.js';
 
 const app = {
@@ -135,25 +136,47 @@ const app = {
                 <span class="text-sm font-semibold bg-indigo-100 text-indigo-800 py-1 px-3 rounded-full">${question.descriptor}</span>
             </div>
         `;
+        
+        if (question.supportText) {
+            let finalImageUrl = question.supportText.imageUrl;
 
-        if (question.supportText && typeof question.supportText.content === 'string') {
-             content += `
-                <div class="support-text prose max-w-none">
-                    ${question.supportText.title ? `<h4 class="font-bold text-lg mb-2">${question.supportText.title}</h4>` : ''}
-                    <div class="whitespace-pre-wrap">${question.supportText.content}</div>
-                </div>`;
+            if (question.supportText.gdriveImageUrl) {
+                const gdriveUrl = question.supportText.gdriveImageUrl;
+                const match = gdriveUrl.match(/file\/d\/([^/]+)/);
+                if (match && match[1]) {
+                    const fileId = match[1];
+                    finalImageUrl = `https://drive.google.com/uc?export=view&id=${fileId}`;
+                }
+            }
+            
+            if (finalImageUrl) {
+                const altText = question.supportText.content || `Imagem de apoio para a questão.`;
+                content += `
+                    <div class="mb-4">
+                        ${question.supportText.title ? `<h4 class="font-bold text-lg mb-2">${question.supportText.title}</h4>` : ''}
+                        <div class="p-2 border rounded-lg bg-slate-50">
+                            <img src="${finalImageUrl}" alt="${altText}" class="w-full h-auto object-contain rounded-md">
+                        </div>
+                    </div>`;
+            } else if (typeof question.supportText.content === 'string') {
+                content += `
+                    <div class="support-text prose max-w-none">
+                        ${question.supportText.title ? `<h4 class="font-bold text-lg mb-2">${question.supportText.title}</h4>` : ''}
+                        <div class="whitespace-pre-wrap">${question.supportText.content}</div>
+                    </div>`;
+            }
         }
         
         content += `<p class="mt-4 mb-4 font-bold">${question.statement}</p>`;
 
         if (question.type === 'objetiva') {
             const options = question.options.map((option, index) => {
-                const letter = String.fromCharCode(97 + index); // a, b, c, d
+                const letter = String.fromCharCode(97 + index).toUpperCase();
                 return `<li data-index="${index}" class="flex items-start"><span class="font-bold mr-2">${letter})</span><span>${option}</span></li>`;
             }).join('');
             content += `<ul class="options-list space-y-2">${options}</ul>`;
         } else { // subjetiva
-            content += `<textarea class="w-full p-3 border rounded-md bg-gray-700 text-white placeholder-gray-400" rows="4" placeholder="Escreva sua resposta aqui..."></textarea>`;
+            content += `<textarea class="w-full p-3 border rounded-md bg-slate-50 text-slate-800 placeholder-slate-400" rows="4" placeholder="Escreva sua resposta aqui..."></textarea>`;
         }
 
         content += `
@@ -171,9 +194,9 @@ const app = {
         
         toggleBtn.addEventListener('click', () => {
             if (question.type === 'objetiva') {
-                const letter = String.fromCharCode(97 + question.answer);
-                let answerHTML = `<strong>Gabarito: ${letter.toUpperCase()})</strong>`;
-                if(question.feedback){
+                const letter = String.fromCharCode(97 + question.answer).toUpperCase();
+                let answerHTML = `<strong>Gabarito: ${letter})</strong>`;
+                if(question.feedback && question.feedback.length > 0){
                     answerHTML += `<p class="mt-2 text-sm">${question.feedback}</p>`;
                 }
                 answerDiv.innerHTML = answerHTML;
