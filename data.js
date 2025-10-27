@@ -1,4 +1,5 @@
 
+
 /**
  * @typedef {'subjetiva' | 'objetiva'} QuestionType
  */
@@ -210,7 +211,7 @@ export const percursos = {
                             type: "objetiva",
                             supportText: {
                                 title: "As três pipas do vovô",
-                                content: `Amanhã é dia de quê? – Meus filhos perguntam, os três ao mesmo tempo.\n- Amanhã é dia de vovô [...] – Eu respondo.\nEles saem saltitantes pela casa brincando e gritando.\n- EBA! Amanhã é dia de vovô.\nComo é bom “ser” criança e esperar pela visita dos avós no “mingo” (Domingo, dia dos avós). Uma semana eles vêm, outra nós vamos.\nNeste dia, o vovô veio cheio de papéis, cola e tesoura. É dia de vovô e também de churrasco. OBA!\nA surpresa do dia. O Vovô faria pipas para as crianças. Depois do churrasco, o vovô sentou, rodeado de seus trinetos para confeccionar as pipas. Sentados lá na garagem, ficaram a tarde toda fazendo uma pipa, enquanto ele resgatava gostosas memórias de sua própria infância. Uma tarde não seria suficiente para as três pipas. Mas a diversão já estava preparada. Só faltava o vento!\nCadê o vento?\nNaquela tarde muito quente de verão não tinha vento, mas não impediu que a turma se divertisse da mesma forma. Foi preciso mais um domingo para o término das pipas. E o tão esperado dia de vento apareceu, afinal. [...]\nComo é bom \"ter\" crianças e viver toda esta alegria.\nPor isso, não me canso de agradecer:\n- Obrigada. Viva o Vovô com suas três pipas!\n<p class="text-sm text-slate-500 mt-2">DEXHEIMER, Aline. As três pipas do vovô. In: QDivertido.</p>`
+                                content: `Amanhã é dia de quê? – Meus filhos perguntam, os três ao mesmo tempo.\n- Amanhã é dia de vovô [...] – Eu respondo.\nEles saem saltitantes pela casa brincando e gritando.\n- EBA! Amanhã é dia de vovô.\nComo é bom “ser” criança e esperar pela visita dos avós no “mingo” (Domingo, dia dos avós). Uma semana eles vêm, outra nós vamos.\nNeste dia, o vovô veio cheio de papéis, cola e tesoura. É dia de vovô e também de churrasco. OBA!\nA surpresa do dia. O Vovô faria pipas para as crianças. Depois do churrasco, o vovô sentou, rodeado de seus trinetos para confeccionar as pipas. Sentados lá na garagem, ficaram a tarde toda fazendo uma pipa, enquanto ele resgatava gostosas memórias de sua própria infância. Uma tarde não seria suficiente para as três pipas. Mas a diversão já estava preparada. Só faltava o vento!\nCadê o vento?\nNaquela tarde muito quente de verão não tinha vento, mas não impediu que a turma se divertisse da mesma forma. Foi preciso mais um domingo para o término das pipas. E o tão esperado dia de vento apareceu, afinal. [...]\nComo é bom "ter" crianças e viver toda esta alegria.\nPor isso, não me canso de agradecer:\n- Obrigada. Viva o Vovô com suas três pipas!\n<p class="text-sm text-slate-500 mt-2">DEXHEIMER, Aline. As três pipas do vovô. In: QDivertido.</p>`
                             },
                             statement: "Que fato deu origem a esse texto?",
                             options: [
@@ -1183,7 +1184,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Infográfico: Água - Curiosidades",
-                                gdriveImageUrl: "https://drive.google.com/file/d/1aBcDeFgHiJkLmNoPqRsTuVwXyZ_AbCdE/view?usp=sharing",
+                                imageUrl: "https://stvnews.com.br/files/infografico-agua.png",
                                 content: "Infográfico com dados sobre o consumo e desperdício de água no Brasil e no mundo. Usa ícones e cores para destacar informações como o consumo médio diário e a porcentagem de água tratada desperdiçada."
                             },
                             statement: "Explique como os elementos gráficos (ícones, cores, disposição dos dados) contribuem para a compreensão das informações apresentadas no infográfico.",
@@ -1195,7 +1196,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Infográfico: Água - Curiosidades",
-                                imageUrl: "./assets/infografico_agua.png",
+                                imageUrl: "https://stvnews.com.br/files/infografico-agua.png",
                                 content: "Infográfico com dados sobre o consumo e desperdício de água no Brasil e no mundo. Usa ícones e cores para destacar informações como o consumo médio diário e a porcentagem de água tratada desperdiçada."
                             },
                             statement: "Com base nos dados apresentados, quais são os principais desafios enfrentados pelo Brasil em relação ao consumo de água potável?",
@@ -1207,7 +1208,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Infográfico: Água - Curiosidades",
-                                imageUrl: "./assets/infografico_agua.png",
+                                imageUrl: "https://stvnews.com.br/files/infografico-agua.png",
                                 content: "Infográfico com dados sobre o consumo e desperdício de água no Brasil e no mundo. Usa ícones e cores para destacar informações como o consumo médio diário e a porcentagem de água tratada desperdiçada."
                             },
                             statement: "De que forma a combinação entre os dados estatísticos e os elementos visuais pode provocar uma reflexão crítica sobre os hábitos de consumo de água da população brasileira?",
