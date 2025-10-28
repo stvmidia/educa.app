@@ -1253,7 +1253,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Cartum",
-                                imageUrl: "./assets/cartum_chamada.png",
+                                imageUrl: "https://stvnews.com.br/files/Screenshot_20251027_214003_OneDrive.jpg",
                                 content: `Uma professora faz a chamada na sala. Após chamar vários números, ela diz 'Trinta e oito...'. Um aluno no fundo da sala, com um revólver na mão, responde 'Tá aqui!!', confundindo o número da chamada com o calibre de uma arma.`
                             },
                             statement: "De acordo com o cartum, o último aluno que estava no fundo da sala, compreendeu que a professora durante a chamada estava se referindo",

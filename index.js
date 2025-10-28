@@ -3,7 +3,6 @@ import { percursos } from './data.js';
 
 const app = {
     elements: {
-        subtitleContainer: null,
         percursoNav: null,
         nivelNav: null,
         contentContainer: null,
@@ -17,7 +16,6 @@ const app = {
     },
     init() {
         // Cache DOM elements
-        this.elements.subtitleContainer = document.getElementById('subtitle-container');
         this.elements.percursoNav = document.getElementById('percurso-nav');
         this.elements.nivelNav = document.getElementById('nivel-nav');
         this.elements.contentContainer = document.getElementById('content-container');
@@ -45,13 +43,12 @@ const app = {
         }
     },
     renderContent() {
-        if (!this.elements.subtitleContainer || !this.elements.percursoNav || !this.elements.nivelNav || !this.elements.contentContainer) {
+        if (!this.elements.percursoNav || !this.elements.nivelNav || !this.elements.contentContainer) {
             console.error("Missing critical container elements in the DOM.");
             return;
         }
 
         // Clear containers
-        this.elements.subtitleContainer.innerHTML = '';
         this.elements.percursoNav.innerHTML = '';
         this.elements.nivelNav.innerHTML = '';
         this.elements.contentContainer.innerHTML = '';
@@ -67,10 +64,6 @@ const app = {
             this.elements.contentContainer.innerHTML = `<p>Nível de ensino não encontrado.</p>`;
             return;
         }
-
-        // Render subtitle
-        const nivelText = this.state.currentNivel === 'ensinoFundamental' ? 'Ensino Fundamental' : 'Ensino Médio';
-        this.elements.subtitleContainer.innerHTML = `<h2 class="text-xl md:text-2xl font-semibold text-slate-600">${this.state.currentPercurso} – ${nivelText}</h2>`;
 
         // Render navigation and questions
         this.updatePercursoNav();
