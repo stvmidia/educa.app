@@ -1,5 +1,4 @@
 
-
 /**
  * @typedef {'subjetiva' | 'objetiva'} QuestionType
  */
@@ -1253,7 +1252,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Cartum",
-                                imageUrl: "https://stvnews.com.br/files/Screenshot_20251027_214003_OneDrive.jpg",
+                                imageUrl: "https://stvnews.com.br/files/imagem2.png",
                                 content: `Uma professora faz a chamada na sala. Após chamar vários números, ela diz 'Trinta e oito...'. Um aluno no fundo da sala, com um revólver na mão, responde 'Tá aqui!!', confundindo o número da chamada com o calibre de uma arma.`
                             },
                             statement: "De acordo com o cartum, o último aluno que estava no fundo da sala, compreendeu que a professora durante a chamada estava se referindo",
@@ -1267,7 +1266,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Tirinha",
-                                imageUrl: "./assets/tirinha_mundo_conectado.png",
+                                imageUrl: "https://stvnews.com.br/files/imagem3.png",
                                 content: `Tirinha de 3 quadros. Quadro 1: "NO MUNDO CONECTADO NÃO HÁ PRECONCEITOS". Personagem no computador mente: "Sou alto, loiro e sincero". Quadro 2: "NÃO HÁ IGNORÂNCIA". Outro personagem diz: "Ler pra quê? Tem tudo na Wikipédia!". Quadro 3: "E NÃO HÁ COVARDIA". Uma mensagem de término de namoro aparece na tela.`
                             },
                             statement: "A tirinha abaixo tem como propósito comunicativo:",
