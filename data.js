@@ -1,4 +1,5 @@
 
+
 /**
  * @typedef {'subjetiva' | 'objetiva'} QuestionType
  */
@@ -220,7 +221,7 @@ export const percursos = {
                                 "O Vovô resgatar as memórias de sua infância."
                             ],
                             answer: 2,
-                            feedback: ""
+                            feedback: "A chegada do avô com o material para fazer pipas foi o evento que iniciou a atividade principal descrita na história, sendo o ponto de partida para a confecção das pipas e as memórias do avô."
                         },
                         {
                             id: "ef-a-q2",
@@ -238,7 +239,7 @@ export const percursos = {
                                 "São humildes e fazem um esforço para comemorar."
                             ],
                             answer: 3,
-                            feedback: ""
+                            feedback: "Expressões como 'compostura da humildade', 'vestido pobre' e a celebração simples com uma 'fatia de bolo' e 'velinhas minúsculas' sugerem que a família tem poucos recursos, mas valoriza o momento."
                         },
                         {
                             id: "ef-a-q3",
@@ -256,7 +257,7 @@ export const percursos = {
                                 "mostram opiniões diferentes."
                             ],
                             answer: 0,
-                            feedback: ""
+                            feedback: "Ambos os textos usam termos como 'não é um bom filme' e 'brega', indicando uma avaliação desfavorável, ou seja, uma crítica negativa, ainda que com ressalvas."
                         },
                         {
                             id: "ef-a-q4",
@@ -274,7 +275,7 @@ export const percursos = {
                                 "abandona a Terra em busca de novos lares."
                             ],
                             answer: 1,
-                            feedback: ""
+                            feedback: "'Humanizar' significa tornar humano ou dar características humanas. No contexto, a sequência de ações (plantar bandeira, colonizar, civilizar) mostra o processo de adaptar a Lua para a vivência e os padrões humanos."
                         },
                         {
                             id: "ef-a-q5",
@@ -292,7 +293,7 @@ export const percursos = {
                                 "Pequeno e apertado."
                             ],
                             answer: 2,
-                            feedback: ""
+                            feedback: "A palavra 'tepidez' significa morno, agradável. A imagem de um 'ninho' evoca sensações de conforto, segurança e acolhimento, tornando o ambiente aconchegante."
                         },
                         {
                             id: "ef-a-q6",
@@ -310,7 +311,7 @@ export const percursos = {
                                 "Alegre"
                             ],
                             answer: 1,
-                            feedback: ""
+                            feedback: "'Gauche' é uma palavra de origem francesa que significa 'esquerdo' ou 'torto'. No contexto do poema, ela carrega o sentido de ser desajustado, deslocado ou inadequado socialmente."
                         },
                         {
                             id: "ef-a-q7",
@@ -328,7 +329,7 @@ export const percursos = {
                                 "a leitura é uma atividade física"
                             ],
                             answer: 0,
-                            feedback: ""
+                            feedback: "A expressão é metafórica. 'Onde os pés pisam' representa o 'lugar social' da pessoa: suas experiências, vivências e contexto. Portanto, a frase significa que nosso modo de pensar é moldado por nossa realidade."
                         },
                         {
                             id: "ef-a-q8",
@@ -346,7 +347,7 @@ export const percursos = {
                                 "Opinião, pois apresenta dados objetivos sobre o estado de saúde das crianças."
                             ],
                             answer: 2,
-                            feedback: ""
+                            feedback: "A frase classifica o resgate como 'um grande presente', o que é uma avaliação subjetiva, um julgamento de valor do presidente sobre o evento, e não um dado concreto ou verificável."
                         },
                         {
                             id: "ef-a-q9",
@@ -364,7 +365,7 @@ export const percursos = {
                                 "Opinião, pois autor opina sobre a manutenção preventiva das árvores."
                             ],
                             answer: 3,
-                            feedback: ""
+                            feedback: "A expressão 'É preciso investir' indica uma recomendação, um ponto de vista do autor sobre o que deve ser feito. Trata-se de uma opinião sobre a necessidade da manutenção, e não de um dado factual."
                         },
                         {
                             id: "ef-a-q10",
@@ -382,7 +383,7 @@ export const percursos = {
                                 "“A solução, claro, estava na internet. Ao perceberem que as reservas de ração estavam baixando drasticamente,(...)\"."
                             ],
                             answer: 1,
-                            feedback: ""
+                            feedback: "Esta opção apresenta uma informação objetiva e verificável sobre a logística da ilha. As outras opções contêm palavras que expressam opinião ou interpretação, como 'terrível', 'sinuca' (gíria para problema) e 'claro'."
                         }
                     ]
                 },
@@ -405,7 +406,7 @@ export const percursos = {
                                 "A transformação de insetos em galhos secos."
                             ],
                             answer: 2,
-                            feedback: ""
+                            feedback: "O texto define mimetismo explicitamente como 'truques' que os animais usam para 'se defender dos inimigos ou capturar outros bichos', ficando com a cor e a forma dos lugares onde estão."
                         },
                         {
                             id: "ef-c-q2",
@@ -423,7 +424,7 @@ export const percursos = {
                                 "Esconder-se em buracos mais profundos."
                             ],
                             answer: 1,
-                            feedback: ""
+                            feedback: "O texto afirma claramente que um dos ratos sugeriu: 'o meio de nos defendermos de Faro-Fino é atar-lhe um guizo ao pescoço'."
                         },
                         {
                             id: "ef-c-q3",
@@ -441,7 +442,7 @@ export const percursos = {
                                 "a leitura literal dos textos."
                             ],
                             answer: 0,
-                            feedback: ""
+                            feedback: "A expressão é metafórica. O autor explica que 'os olhos que tem' se refere à 'visão de mundo' e às experiências de vida de cada um, que moldam a forma como interpretamos o que lemos."
                         },
                         {
                             id: "ef-c-q4",
@@ -459,7 +460,7 @@ export const percursos = {
                                 "liderada."
                             ],
                             answer: 3,
-                            feedback: ""
+                            feedback: "No contexto, a palavra 'encabeçada' indica que as universidades brasileiras estão à frente da pesquisa, ou seja, estão liderando a iniciativa."
                         },
                         {
                             id: "ef-c-q5",
@@ -477,7 +478,7 @@ export const percursos = {
                                 "\"Cada cor era colocada ao lado de dois bebedouros: ...\". (Ι. 12-13)."
                             ],
                             answer: 1,
-                            feedback: ""
+                            feedback: "Este trecho resume a descoberta central da pesquisa mencionada, que é o ponto principal da notícia: a capacidade superior de visão de cores dos beija-flores em comparação com os humanos."
                         },
                         {
                             id: "ef-c-q6",
@@ -495,7 +496,7 @@ export const percursos = {
                                 "Ele quer ter mais cachorros em casa."
                             ],
                             answer: 2,
-                            feedback: ""
+                            feedback: "Ao comparar suas posses (piscina, varanda) com as da família 'pobre' (riacho, céu, floresta), o menino conclui que ele é o 'pobre', mostrando que valorizou mais a riqueza natural e a simplicidade do que os bens materiais."
                         },
                         {
                             id: "ef-c-q7",
@@ -513,7 +514,7 @@ export const percursos = {
                                 "Enfatizar que a família do interior é mais pobre."
                             ],
                             answer: 1,
-                            feedback: ""
+                            feedback: "A repetição cria uma estrutura de comparação direta entre o que cada família possui, permitindo ao menino (e ao leitor) reavaliar o conceito de riqueza."
                         },
                         {
                             id: "ef-c-q8",
@@ -532,7 +533,7 @@ export const percursos = {
                                 "a revolta diante do espelho."
                             ],
                             answer: 0,
-                            feedback: ""
+                            feedback: "O eu lírico contrapõe o que 'não tinha' com o que tem 'hoje' e se questiona sobre essa mudança ('Em que espelho ficou perdida a minha face?'), revelando uma tomada de consciência sobre a passagem do tempo e suas marcas."
                         },
                         {
                             id: "ef-c-q9",
@@ -550,7 +551,7 @@ export const percursos = {
                                 "indicar que a atitude dos gatos com a erva-gateira é surpreendente."
                             ],
                             answer: 3,
-                            feedback: ""
+                            feedback: "A palavra 'curioso' aqui é usada no sentido de 'estranho', 'interessante' ou 'que desperta a curiosidade', indicando que a reação eufórica dos gatos à planta é algo inesperado e surpreendente."
                         },
                         {
                             id: "ef-c-q10",
@@ -568,7 +569,7 @@ export const percursos = {
                                 "mostrar que Marina deveria ir para o castelo escondida."
                             ],
                             answer: 1,
-                            feedback: ""
+                            feedback: "A rubrica indica 'voz assustada' e a fala sugere que Marina 'deve reconsiderar essa visita'. A entonação de medo serve para alertar Marina sobre o perigo da lenda, tentando convencê-la a não ir."
                         },
                         {
                             id: "ef-c-q11",
@@ -586,7 +587,7 @@ export const percursos = {
                                 "mostrar dados extraídos de uma pesquisa científica."
                             ],
                             answer: 2,
-                            feedback: ""
+                            feedback: "O texto é um trecho de uma lei, estruturado em artigos e parágrafos, que estabelece proibições ('Fica proibida...') e deveres ('deverão obter...'). Sua função é estabelecer normas e regras."
                         },
                         {
                             id: "ef-c-q12",
@@ -604,7 +605,7 @@ export const percursos = {
                                 "uma notícia."
                             ],
                             answer: 3,
-                            feedback: ""
+                            feedback: "O texto relata um acontecimento real, com local (Pensilvânia), data (sexta-feira) e fontes (bombeiros), características típicas de uma notícia jornalística."
                         }
                     ]
                 }
@@ -781,7 +782,7 @@ export const percursos = {
                                 "Redução do consumo de recursos naturais."
                             ],
                             answer: 1,
-                            feedback: ""
+                            feedback: "A resposta está explícita no texto: '...têm causado impactos ambientais significativos, como o desmatamento, a poluição e a perda da biodiversidade.'"
                         },
                         {
                             id: "em-a-q2",
@@ -799,7 +800,7 @@ export const percursos = {
                                 "Ignorar os impactos ambientais existentes."
                             ],
                             answer: 2,
-                            feedback: ""
+                            feedback: "O verbo 'repensar' indica a necessidade de reavaliar e mudar. O objetivo final, conforme o texto, é 'garantir a sustentabilidade', o que exige a modificação das práticas atuais."
                         },
                         {
                             id: "em-a-q3",
@@ -817,7 +818,7 @@ export const percursos = {
                                 "Capacidade de execução de tarefas repetitivas."
                             ],
                             answer: 0,
-                            feedback: ""
+                            feedback: "O texto afirma diretamente no primeiro parágrafo: '...enquanto habilidades humanas, como criatividade, empatia e pensamento crítico, tornam-se cada vez mais valorizadas'."
                         },
                         {
                             id: "em-a-q4",
@@ -835,7 +836,7 @@ export const percursos = {
                                 "Cada indivíduo interpreta o mundo a partir de sua própria experiência e contexto."
                             ],
                             answer: 3,
-                            feedback: ""
+                            feedback: "A expressão significa que toda perspectiva ('ponto de vista') é limitada a uma posição específica ('vista de um ponto'). O autor reforça que nossa interpretação é moldada por nosso 'lugar social' e experiências."
                         },
                         {
                             id: "em-a-q5",
@@ -853,7 +854,7 @@ export const percursos = {
                                 "Deseja provar que a cartomante é uma fraude."
                             ],
                             answer: 2,
-                            feedback: ""
+                            feedback: "O texto mostra o conflito de Camilo: ele acha a ideia 'absurda', mas sua 'inquietação' e a força da 'superstição' o fazem ceder. Isso indica que seu desespero o levou a uma atitude irracional."
                         },
                         {
                             id: "em-a-q6",
@@ -871,7 +872,7 @@ export const percursos = {
                                 "A superstição é exclusiva de pessoas ignorantes."
                             ],
                             answer: 1,
-                            feedback: ""
+                            feedback: "'Interstícios' são pequenos vãos ou frestas. A metáfora sugere que a superstição se infiltra nas brechas da razão, podendo dominar até mesmo uma pessoa 'ilustrada' como Camilo."
                         },
                         {
                             id: "em-a-q7",
@@ -889,7 +890,7 @@ export const percursos = {
                                 "Já conheciam a teoria anteriormente."
                             ],
                             answer: 2,
-                            feedback: ""
+                            feedback: "O texto afirma explicitamente que 'Seus ouvintes estavam céticos', o que significa que eles duvidavam ou não acreditavam na teoria."
                         },
                         {
                             id: "em-a-q8",
@@ -907,7 +908,7 @@ export const percursos = {
                                 "Não se importava com a opinião dos ouvintes."
                             ],
                             answer: 0,
-                            feedback: ""
+                            feedback: "O texto diz que, apesar do ceticismo dos outros, 'ele insistia'. Essa atitude demonstra sua forte convicção e seu desejo de persuadir os outros de que sua teoria e sua máquina eram reais."
                         },
                         {
                             id: "em-a-q9",
@@ -925,7 +926,7 @@ export const percursos = {
                                 "Uma crítica moral ao uso das redes sociais."
                             ],
                             answer: 1,
-                            feedback: ""
+                            feedback: "A expressão 'Estudos indicam' mostra que a afirmação não é uma opinião do autor, mas sim o resultado de pesquisas, ou seja, um fato apurado cientificamente."
                         },
                         {
                             id: "em-a-q10",
@@ -943,7 +944,7 @@ export const percursos = {
                                 "Uma opinião sobre a importância da educação digital."
                             ],
                             answer: 3,
-                            feedback: ""
+                            feedback: "O uso do adjetivo 'essencial' indica um julgamento de valor, uma recomendação do autor sobre o que ele considera importante. Portanto, é uma opinião sobre como os usuários devem agir."
                         }
                     ]
                 },
@@ -966,7 +967,7 @@ export const percursos = {
                                 "Melhoria na qualidade de vida e no bem-estar social"
                             ],
                             answer: 2,
-                            feedback: ""
+                            feedback: "O texto é claro ao afirmar que 'A busca incansável de rendas maiores vem nos levando a uma ansiedade e iniquidade sem precedentes'."
                         },
                         {
                             id: "em-c-q2",
@@ -984,7 +985,7 @@ export const percursos = {
                                 "Que a riqueza total é suficiente para todos"
                             ],
                             answer: 1,
-                            feedback: ""
+                            feedback: "A informação está literal no texto: 'Nos Estados Unidos, uma grande maioria dos americanos acredita que o país está “no caminho errado”'."
                         },
                         {
                             id: "em-c-q3",
@@ -1002,7 +1003,7 @@ export const percursos = {
                                 "Expressar surpresa com a quantidade de lunáticos."
                             ],
                             answer: 0,
-                            feedback: ""
+                            feedback: "A expressão 'meia dúzia' é usada de forma coloquial para indicar um número pequeno e insignificante, demonstrando o desprezo da personagem pelos lunáticos que 'roubaram' seu marido."
                         },
                         {
                             id: "em-c-q4",
@@ -1020,7 +1021,7 @@ export const percursos = {
                                 "Relembra com humor uma situação trivial ocorrida durante uma caminhada."
                             ],
                             answer: 2,
-                            feedback: ""
+                            feedback: "A repetição exaustiva da 'pedra' e a ênfase em 'nunca me esquecerei' indicam que o obstáculo teve um impacto profundo e duradouro, simbolizando um trauma ou uma dificuldade marcante na vida do eu lírico."
                         },
                         {
                             id: "em-c-q5",
@@ -1038,7 +1039,7 @@ export const percursos = {
                                 "Está emocionalmente impactado pelo obstáculo enfrentado."
                             ],
                             answer: 3,
-                            feedback: ""
+                            feedback: "As 'retinas' representam a visão e a percepção. A 'fadiga' não é física, mas um cansaço de tanto 'ver' ou reviver o obstáculo (a pedra), indicando um desgaste emocional causado pelo trauma."
                         },
                         {
                             id: "em-c-q6",
@@ -1056,7 +1057,7 @@ export const percursos = {
                                 "Está satisfeito com sua condição atual."
                             ],
                             answer: 1,
-                            feedback: ""
+                            feedback: "Ele admite não ser santo 'ainda', mas afirma com convicção 'Mas vou ficar'. Isso demonstra uma forte determinação em transformar sua vida em busca da redenção."
                         },
                         {
                             id: "em-c-q7",
@@ -1074,7 +1075,7 @@ export const percursos = {
                                 "Rejeitaram qualquer forma de liderança para manter a igualdade."
                             ],
                             answer: 2,
-                            feedback: ""
+                            feedback: "Ao substituírem a igualdade por 'privilégios para os líderes', os porcos replicaram o sistema de opressão dos humanos que eles mesmos combateram, tornando-se os novos tiranos."
                         },
                         {
                             id: "em-c-q8",
@@ -1092,7 +1093,7 @@ export const percursos = {
                                 "Delegaram responsabilidades equitativamente entre todos."
                             ],
                             answer: 0,
-                            feedback: ""
+                            feedback: "O texto afirma que os porcos 'começaram a se beneficiar mais do que os outros animais' e criaram 'privilégios para os líderes', o que demonstra que agiram em benefício próprio."
                         },
                         {
                             id: "em-c-q9",
@@ -1110,7 +1111,7 @@ export const percursos = {
                                 "Acreditava que, ao permanecer molhada, manteria viva a memória do filho."
                             ],
                             answer: 3,
-                            feedback: ""
+                            feedback: "A mãe via a água como a nova forma de existência do filho ('a água era agora o seu menino'). Manter o corpo molhado era uma forma simbólica de manter o filho junto a si, preservando sua presença e memória."
                         },
                         {
                             id: "em-c-q10",
@@ -1128,7 +1129,7 @@ export const percursos = {
                                 "Uma informação irrelevante ao tema."
                             ],
                             answer: 1,
-                            feedback: ""
+                            feedback: "A palavra 'essencial' confere um julgamento de valor à leitura, refletindo a convicção do autor sobre sua importância, o que caracteriza uma opinião."
                         },
                         {
                             id: "em-c-q11",
@@ -1146,7 +1147,7 @@ export const percursos = {
                                 "Uma crítica à falta de leitores no país."
                             ],
                             answer: 0,
-                            feedback: ""
+                            feedback: "A menção explícita a 'Dados do IBGE' indica que a informação é baseada em uma fonte oficial de pesquisa, tratando-se, portanto, de um fato verificável."
                         },
                         {
                             id: "em-c-q12",
@@ -1164,7 +1165,7 @@ export const percursos = {
                                 "Descrevendo uma política pública existente."
                             ],
                             answer: 1,
-                            feedback: ""
+                            feedback: "O uso da expressão 'É fundamental' indica um juízo de valor, uma recomendação sobre o que o autor acredita ser necessário, caracterizando uma opinião."
                         }
                     ]
                 }
@@ -1258,7 +1259,7 @@ export const percursos = {
                             statement: "De acordo com o cartum, o último aluno que estava no fundo da sala, compreendeu que a professora durante a chamada estava se referindo",
                             options: ["ao número 38.", "a um revólver.", "a uma piada.", "a presença."],
                             answer: 1,
-                            feedback: ""
+                            feedback: "A resposta do aluno ('Tá aqui!!') enquanto segura uma arma cria a humor e a crítica, mostrando que ele associou o número 'trinta e oito' ao calibre de um revólver, e não ao seu número na chamada."
                         },
                         {
                             id: "ef2-r-q8",
@@ -1272,7 +1273,7 @@ export const percursos = {
                             statement: "A tirinha abaixo tem como propósito comunicativo:",
                             options: ["refletir sobre o mal uso da internet no cotidiano", "expor os usos que podemos fazer da internet no cotidiano", "expor as ferramentas de comunicação disponíveis na internet", "explicar sobre como a internet substituiu a leitura"],
                             answer: 0,
-                            feedback: ""
+                            feedback: "A tirinha usa de ironia ao contrastar a promessa de um 'mundo conectado' ideal com exemplos de mau uso: mentiras (preconceito), superficialidade (ignorância) e falta de responsabilidade (covardia)."
                         },
                         {
                             id: "ef2-r-q9",
@@ -1284,7 +1285,7 @@ export const percursos = {
                             statement: "Pelo visto, o autor gostaria de que os homens do Itamaraty tivessem mais:",
                             options: ["inteligência", "patriotismo", "vivência", "coerência"],
                             answer: 2,
-                            feedback: ""
+                            feedback: "O autor critica a falta de participação dos diplomatas em 'combates contra a ditadura, contra o colonialismo', indicando que eles não tiveram a experiência (vivência) prática que geraria mais sensibilidade."
                         },
                         {
                             id: "ef2-r-q10",
@@ -1297,7 +1298,7 @@ export const percursos = {
                             statement: "Podemos dizer que o texto tem a finalidade de",
                             options: ["causar emoção no leitor.", "apresentar um ponto de vista.", "vender um produto pouco divulgado.", "dar informações sobre um evento."],
                             answer: 3,
-                            feedback: ""
+                            feedback: "O texto informa o que é o evento (troca de livros), onde acontece (Museu da Limpeza Urbana), quando (até o dia 30, de terça a sexta) e o horário. Sua função principal é informativa."
                         }
                     ]
                 },
@@ -1316,7 +1317,7 @@ export const percursos = {
                             statement: "A tirinha apresenta cenas entre Jon e seu gato, Garfield. Da leitura da sequência em quadrinhos, pode-se entender que:",
                             options: ["Garfield piorou a manhã de Jon.", "Jon estava tendo um bom dia.", "Jon fica mal-humorado de manhã.", "Garfield acordou bem-humorado"],
                             answer: 0,
-                            feedback: ""
+                            feedback: "A fala de Jon sobre ter tido a 'pior manhã' e o pensamento de Garfield ('geralmente eu não acordo tão cedo') sugerem que Garfield foi a causa do despertar precoce e, consequentemente, do mau humor de Jon."
                         },
                         {
                             id: "ef2-a-q2",
@@ -1330,7 +1331,7 @@ export const percursos = {
                             statement: "No texto, ao associar a linguagem verbal e não verbal, pode-se concluir que a mulher, em relação à atitude do homem, estava",
                             options: ["Indiferente.", "Animada.", "Zangada.", "Conformada."],
                             answer: 2,
-                            feedback: ""
+                            feedback: "Apesar de suas palavras negarem, a linguagem não verbal (olhar irritado, segurar uma faca e um sorriso forçado) claramente indica que ela está, sim, zangada."
                         },
                         {
                             id: "ef2-a-q3",
@@ -1344,7 +1345,7 @@ export const percursos = {
                             statement: "Ao associar as linguagens verbal e não verbal, conclui-se que o homem, no último quadrinho, está",
                             options: ["Triste.", "Bravo.", "Contente.", "Decepcionado."],
                             answer: 1,
-                            feedback: ""
+                            feedback: "A expressão facial do pai, a boca aberta gritando e as letras em negrito na sua fala ('MAS QUE DROGA, CALVIN!!') são indicadores claros de que ele está bravo com a situação."
                         },
                         {
                             id: "ef2-a-q4",
@@ -1358,7 +1359,7 @@ export const percursos = {
                             statement: "Ao associar a linguagem verbal e não verbal, conclui-se que as pessoas que atravessam na faixa de pedestre estão",
                             options: ["Apáticas.", "Tranquilas.", "Apavoradas.", "Indiferentes."],
                             answer: 2,
-                            feedback: ""
+                            feedback: "A linguagem corporal dos pedestres, que estão correndo e com expressões de susto, mostra que eles estão apavorados com o risco de serem atropelados pelo motorista distraído."
                         },
                         {
                             id: "ef2-a-q5",
@@ -1371,7 +1372,7 @@ export const percursos = {
                             statement: "Qual é o objetivo desse texto?",
                             options: ["Agradecer pelos brinquedos enviados pela senhora Marta Guimarães.", "Divulgar a doação de brinquedos feita pela senhora Marta Guimarães.", "Informar sobre a alegria das crianças por ter recebido os brinquedos.", "Apresentar o trabalho desenvolvido pela ONG \"Criança feliz\"."],
                             answer: 0,
-                            feedback: ""
+                            feedback: "O texto é uma carta cujo propósito principal é expresso logo no início: 'Venho por meio desta agradecer os brinquedos...'. As outras informações servem para reforçar esse agradecimento."
                         },
                         {
                             id: "ef2-a-q6",
@@ -1385,7 +1386,7 @@ export const percursos = {
                             statement: "O texto tem a finalidade principal de",
                             options: ["desaprovar um comportamento.", "informar um acontecimento público.", "satirizar uma situação comum na escola.", "criticar a gramática da língua portuguesa."],
                             answer: 2,
-                            feedback: "Embora a charge critique a política, o cenário é escolar, e a piada se constrói dentro desse contexto, satirizando a situação."
+                            feedback: "A charge usa uma situação escolar para criar humor e, ao mesmo tempo, fazer uma crítica social. A resposta inesperada do aluno, quebrando a expectativa da pergunta gramatical, satiriza a descrença nos políticos."
                         },
                         {
                             id: "ef2-a-q8",
@@ -1398,7 +1399,7 @@ export const percursos = {
                             statement: "Esse editorial publicado no Jornal O Popular tem por objetivo",
                             options: ["instruir os turistas sobre a destinação adequada do lixo no Rio Araguaia.", "opinar criticamente sobre a falta de respeito dos goianos em relação ao Rio Araguaia.", "divulgar o trabalho feito pela Secretaria Municipal de Meio Ambiente de Aruanã.", "apresentar informação sobre a quantidade de toneladas de lixo deixados na natureza."],
                             answer: 1,
-                            feedback: ""
+                            feedback: "O texto é um editorial, gênero que expressa a opinião do jornal. Ele usa dados sobre o lixo para fundamentar sua crítica principal: 'o afeto não se traduz em respeito', mostrando a incoerência dos turistas."
                         },
                         {
                             id: "ef2-a-q9",
@@ -1411,7 +1412,7 @@ export const percursos = {
                             statement: "Qual é a finalidade do texto?",
                             options: ["Apresentar um ensinamento moral.", "Analisar o comportamento dos animais.", "Descrever as características dos animais.", "Mostrar um traço da personalidade do leão."],
                             answer: 0,
-                            feedback: ""
+                            feedback: "O texto é uma fábula, gênero que utiliza uma narrativa, geralmente com animais, para transmitir uma lição de moral, que neste caso é expressa na frase final: 'Mais vale paciência pequenina do que arrancos de leão'."
                         },
                         {
                             id: "ef2-a-q10",
@@ -1425,7 +1426,7 @@ export const percursos = {
                             statement: "O objetivo desse texto é",
                             options: ["Informar.", "Entreter.", "Instruir.", "Opinar."],
                             answer: 1,
-                            feedback: ""
+                            feedback: "A tirinha usa o humor, baseado na interpretação literal e absurda de Hagar, para divertir e entreter o leitor. Sua finalidade principal não é informar ou instruir, mas provocar o riso."
                         }
                     ]
                 },
@@ -1444,7 +1445,7 @@ export const percursos = {
                             statement: "No texto, as letras inclinadas, as nuvenzinhas rompidas, as asas e os traços usados na representação do sábado e do domingo sugerem",
                             options: ["serenidade.", "tempestade.", "tranquilidade.", "velocidade."],
                             answer: 3,
-                            feedback: ""
+                            feedback: "Esses elementos visuais são convenções gráficas para representar movimento e rapidez, transmitindo a sensação comum de que o fim de semana passa muito rápido."
                         },
                         {
                             id: "ef2-c-q2",
@@ -1458,7 +1459,7 @@ export const percursos = {
                             statement: "Na figura acima, a relação entre o slogan \"Tem um gatinho solto nas ruas” e a imagem ocorre de forma:",
                             options: ["irônica", "incoerente", "redundante", "afetiva"],
                             answer: 0,
-                            feedback: ""
+                            feedback: "Há ironia porque o texto verbal alerta sobre um problema que começa pequeno ('gatinho'), mas pode se tornar grande ('leão'), enquanto a imagem mostra um gatinho literal, criando um contraste humorístico e de alerta."
                         },
                         {
                             id: "ef2-c-q3",
@@ -1472,7 +1473,7 @@ export const percursos = {
                             statement: "No segundo quadrinho, pode-se deduzir pela fala da personagem que",
                             options: ["não existem maridos perfeitos.", "não há segredos para um casamento perfeito.", "não há mulheres felizes.", "não há homens infelizes."],
                             answer: 0,
-                            feedback: ""
+                            feedback: "A descrição do 'marido perfeito' é a de alguém sem defeitos ou necessidades humanas básicas, algo impossível de existir. A conclusão de Helga (só um homem morto seria assim) reforça a ideia de que um marido vivo e real não pode ser perfeito."
                         },
                         {
                             id: "ef2-c-q4",
@@ -1486,7 +1487,7 @@ export const percursos = {
                             statement: "Após a leitura da História em Quadrinhos, podemos afirmar que o personagem Verdugo",
                             options: ["costuma visitar o parque quase que diariamente.", "tem alergia ao cheiro forte da madeira fresca.", "está desacostumado à pratica de atividades ao ar livre.", "engasgou-se, sem fôlego, enquanto andava de bicicleta."],
                             answer: 2,
-                            feedback: ""
+                            feedback: "A reação exagerada e negativa de Verdugo ao ar 'limpo demais' indica que ele vive em um ambiente poluído e não está habituado a frequentar lugares com natureza e ar puro, como parques."
                         },
                         {
                             id: "ef2-c-q5",
@@ -1499,7 +1500,7 @@ export const percursos = {
                             statement: "Ao escrever este texto, o autor teve como objetivo",
                             options: ["dar um estudo elaborado sobre saúde.", "trazer diversão ao leitor.", "ensinar sobre saúde pública.", "noticiar um mutirão para a comunidade."],
                             answer: 3,
-                            feedback: ""
+                            feedback: "O texto tem características de uma notícia: informa sobre um evento específico (o mutirão), com detalhes sobre quem organiza (Prefeitura), o que será oferecido (exames) e onde, com o objetivo de informar a população."
                         },
                         {
                             id: "ef2-c-q6",
@@ -1512,7 +1513,7 @@ export const percursos = {
                             statement: "Qual é o gênero desse texto?",
                             options: ["Anedota.", "Conto.", "Entrevista.", "Fábula."],
                             answer: 1,
-                            feedback: ""
+                            feedback: "O texto começa com 'Era uma vez...', apresenta um personagem (o menino), uma sequência de ações e uma descoberta final, que são características de uma narrativa curta, ou seja, um conto."
                         },
                         {
                             id: "ef2-c-q7",
@@ -1525,7 +1526,7 @@ export const percursos = {
                             statement: "A finalidade do texto é",
                             options: ["relatar as consequências negativas do stress.", "informar que o stress já existe há mais de 400 anos.", "identificar a doença que causou o stress na civilização Inca.", "comparar o stress do homem moderno ao dos Incas."],
                             answer: 1,
-                            feedback: ""
+                            feedback: "O texto é de divulgação científica e seu objetivo principal é informar o leitor sobre a descoberta de que o estresse não é um mal moderno, mas que já afetava civilizações antigas como a inca."
                         },
                         {
                             id: "ef2-c-q8",
@@ -1538,7 +1539,7 @@ export const percursos = {
                             statement: "A finalidade do texto é",
                             options: ["alertar as pessoas para o uso indevido de remédios.", "informar sobre todos os tipos de drogas existentes.", "chamar a atenção para os malefícios da dependência química.", "buscar soluções para os usuários das drogas mais consumidas."],
                             answer: 2,
-                            feedback: ""
+                            feedback: "O texto foca no conceito de 'dependência' como o 'pior de toda droga' e na ideia de que a verdadeira liberdade é a 'independência', alertando para os perigos de se tornar 'escravo' das drogas."
                         },
                         {
                             id: "ef2-c-q9",
@@ -1551,7 +1552,7 @@ export const percursos = {
                             statement: "Esse texto é um exemplo de",
                             options: ["artigo.", "crônica.", "curiosidade.", "reportagem."],
                             answer: 3,
-                            feedback: ""
+                            feedback: "O texto apresenta os resultados de uma pesquisa ('De acordo com um estudo...'), cita fontes ('British Academy', 'The Independent') e informa sobre um tema de interesse geral, características de uma reportagem."
                         },
                         {
                             id: "ef2-c-q10",
@@ -1564,7 +1565,7 @@ export const percursos = {
                             statement: "O texto lido se estrutura a partir das características do conto popular porque",
                             options: ["é uma narrativa que apresenta marcas de oralidade na linguagem e estruturada ficcionalmente.", "é um texto expositivo, pois apresenta um fato com opiniões das personagens e com linguagem culta.", "instrui o leitor sobre algo, utilizando uma linguagem objetiva.", "informa o leitor e a sociedade sobre fatos relevantes do dia a dia."],
                             answer: 0,
-                            feedback: ""
+                            feedback: "O conto popular é caracterizado por ser uma narrativa curta, ficcional, transmitida oralmente (o que justifica uma linguagem mais simples e com marcas de oralidade) e que geralmente envolve astúcia e lições de vida."
                         }
                     ]
                 }
@@ -1695,7 +1696,7 @@ export const percursos = {
                             statement: "O texto foi escrito com o objetivo de:",
                             options: ["conscientizar o leitor.", "apresentar sumário de uma obra.", "opinar sobre um livro.", "dar informações sobre o autor.", "narrar um fato científico."],
                             answer: 2,
-                            feedback: ""
+                            feedback: "O texto não apenas resume o livro, mas também o qualifica ('belo título'), explicando seu tema central (a vida de um ghost-writer) e seus dilemas, o que caracteriza uma resenha ou uma opinião sobre a obra."
                         },
                         {
                             id: "em2-a-q2",
@@ -1708,7 +1709,7 @@ export const percursos = {
                             statement: "O Objetivo do texto é:",
                             options: ["criticar", "instruir", "entreter", "anunciar", "informar"],
                             answer: 4,
-                            feedback: ""
+                            feedback: "O texto apresenta informações sobre o lançamento de uma nova rede social (Ello), sua proposta e seu posicionamento no mercado em relação a concorrentes como Facebook e Google. O objetivo principal é informar o leitor sobre essa novidade."
                         },
                         {
                             id: "em2-a-q3",
@@ -1722,7 +1723,7 @@ export const percursos = {
                             statement: "Nesse cartaz, o uso da imagem do calçado aliada ao texto verbal tem o objetivo de",
                             options: ["criticar as difíceis condições de vida dos refugiados.", "revelar a longa trajetória percorrida pelos refugiados.", "incentivar a campanha de doações para os refugiados.", "denunciar a situação de carência vivida pelos refugiados.", "simbolizar a necessidade de adesão à causa dos refugiados."],
                             answer: 4,
-                            feedback: ""
+                            feedback: "A expressão 'calçar os sapatos de alguém' é uma metáfora para empatia. O cartaz usa essa ideia para convidar o leitor a se solidarizar e apoiar a causa dos refugiados, ou seja, a aderir a ela."
                         },
                         {
                             id: "em2-a-q4",
@@ -1736,7 +1737,7 @@ export const percursos = {
                             statement: "Esse texto é direcionado, principalmente, aos",
                             options: ["jovens indecisos na escolha da profissão a seguir.", "profissionais que atuam no direcionamento profissional.", "pais que querem decidir a profissão dos filhos.", "professores comprometidos com o futuro profissional dos alunos.", "profissionais que buscam recolocação no mercado."],
                             answer: 0,
-                            feedback: ""
+                            feedback: "O título e o conteúdo do infográfico, com dicas sobre autoconhecimento, pesquisa e planejamento de carreira, são claramente voltados para o público que está no momento de escolher uma profissão, ou seja, os jovens."
                         },
                         {
                             id: "em2-a-q5",
@@ -1750,7 +1751,7 @@ export const percursos = {
                             statement: "Considerando-se o contexto apresentado na charge, é correto afirmar que:",
                             options: ["Se mostra a tecnologia estendida a todos os grupos da sociedade, que a utilizam bem, já que os usuários não subestimam seu potencial.", "Se define o avanço tecnológico do país levando em consideração, principalmente, a política pública para o acesso a esse tipo de bem.", "Se estabelece uma relação paradoxal entre os avanços obtidos na área tecnológica e as condições de vida a que está sujeita expressiva parcela da população.", "Se pode entender como positiva a nova relação do homem com as máquinas, já que elas tiram expressiva parcela da população de condições aviltantes de vida.", "Se veem a criticidade e o bom senso de grande parte da população menos favorecida para o uso adequado das novas tecnologias no cotidiano."],
                             answer: 2,
-                            feedback: ""
+                            feedback: "A charge cria um paradoxo (uma contradição) ao mostrar um objeto de alta tecnologia sendo usado para uma necessidade básica (calor), evidenciando que o avanço tecnológico não eliminou a desigualdade social."
                         },
                         {
                             id: "em2-a-q6",
@@ -1764,7 +1765,7 @@ export const percursos = {
                             statement: "A charge destina-se a:",
                             options: ["criticar o conflito existente entre gerações.", "conscientizar os leitores da importância de preservar a natureza.", "apontar o desperdício de um desmatamento mal planejado.", "salientar um processo ainda rudimentar de trabalho rural.", "a importância do desmatamento."],
                             answer: 1,
-                            feedback: ""
+                            feedback: "O contraste entre a destruição (pai com machado) e a esperança de renovação (filho com a muda) é um apelo visual para a conscientização sobre a necessidade de cuidar do meio ambiente."
                         },
                         {
                             id: "em2-a-q7",
@@ -1778,7 +1779,7 @@ export const percursos = {
                             statement: "De acordo com esse texto, as pessoas estão",
                             options: ["brigando.", "conversando.", "falando.", "gritando.", "pensando"],
                             answer: 4,
-                            feedback: "Embora o narrador as veja como 'robôs', os balões de pensamento indicam que elas estão, de fato, pensando, mesmo que ele julgue seus pensamentos como vazios ou rotineiros."
+                            feedback: "A presença dos balões sobre as cabeças das pessoas é uma convenção dos quadrinhos para representar o pensamento, mesmo que o personagem principal os considere vazios ou alienados."
                         },
                         {
                             id: "em2-a-q8",
@@ -1791,7 +1792,7 @@ export const percursos = {
                             statement: "O Texto é uma carta do leitor, pois",
                             options: ["relata como o sal prejudica a saúde da família de Edmundo e faz um pedido.", "narra a história da vida da família de Edmundo em relação a sua alimentação.", "instrui a família de Edmundo a viver de forma saudável e, para isso, publica novas receitas.", "noticia o ponto de vista do leitor Edmundo a respeito das reportagens publicadas na revista.", "manifesta o repúdio do leitor Edmundo sobre os assuntos publicados na revista Saúde."],
                             answer: 3,
-                            feedback: ""
+                            feedback: "O texto é endereçado aos 'Prezados editores', o autor se identifica como 'leitor assíduo' e comenta sobre matérias da revista, características que definem o gênero carta do leitor."
                         },
                         {
                             id: "em2-a-q9",
@@ -1805,7 +1806,7 @@ export const percursos = {
                             statement: "Esse texto critica",
                             options: ["A pobreza.", "O consumismo.", "A política.", "A tecnologia.", "O dinheiro"],
                             answer: 1,
-                            feedback: ""
+                            feedback: "A charge ironiza a lógica do consumismo, na qual uma pessoa prioriza a compra de um bem supérfluo (a TV) em detrimento de uma necessidade básica (uma moradia com parede), mostrando a inversão de valores."
                         },
                         {
                             id: "em2-a-q10",
@@ -1819,7 +1820,7 @@ export const percursos = {
                             statement: "Esse texto é direcionado ao leitor para",
                             options: ["Chamar atenção quanto a um perigo iminente.", "Criticar um comportamento socialmente inadequado.", "Informar a respeito de uma norma do código de trânsito.", "Persuadir a adotar um determinado comportamento.", "Mostrar a ciclovia."],
                             answer: 3,
-                            feedback: ""
+                            feedback: "A campanha tem o objetivo claro de convencer (persuadir) os motoristas a mudarem seu comportamento no trânsito, adotando a prática segura de manter distância ao ultrapassar ciclistas."
                         }
                     ]
                 },
@@ -1852,7 +1853,7 @@ export const percursos = {
                             statement: "Sobre as funções desempenhadas pelas mulheres na sociedade e de acordo com expresso nas linguagens verbal e não verbal da charge, afirma-se que:",
                             options: ["As moças, hoje em dia, opinam, trabalham, fazem terapias e não querem ter celulites.", "A vovó acha que não valeu a pena ter sido boneca, quando mais jovem.", "A moça está reclamando de ter de consertar tomadas.", "As mulheres de hoje ainda preferem fazer doces e visitar as amigas a viver no paraíso.", "A atribuição de não ser boneca implica também fazer tarefas tradicionalmente associadas ao sexo masculino."],
                             answer: 0,
-                            feedback: ""
+                            feedback: "A fala da personagem jovem lista uma série de atividades e preocupações ('ter opinião', 'trabalhar', 'fazer terapia') que contrastam com a vida mais simples de sua avó, descrevendo o cotidiano da mulher moderna."
                         },
                         {
                             id: "em2-c-q3",
@@ -1866,7 +1867,7 @@ export const percursos = {
                             statement: "A resposta dada pela menina no segundo quadrinho indica que ela está:",
                             options: ["Contrariada.", "Convicta.", "Decepcionada.", "Indiferente.", "Perplexa."],
                             answer: 1,
-                            feedback: "A expressão facial e a frase 'CLARO QUE NÃO!' demonstram certeza e convicção, ainda que o quadrinho seguinte revele uma contradição humorística."
+                            feedback: "A expressão facial, a postura e a frase 'CLARO QUE NÃO!' demonstram certeza e convicção na sua negação, embora o quadrinho seguinte revele uma contradição humorística."
                         },
                         {
                             id: "em2-c-q4",
@@ -1880,7 +1881,7 @@ export const percursos = {
                             statement: "Esse texto demonstra uma crítica",
                             options: ["à desvalorização da moeda.", "à distribuição de renda no país.", "à poluição do meio ambiente.", "ao desenvolvimento econômico.", "ao lucro da exploração ambiental."],
                             answer: 4,
-                            feedback: "A imagem critica a busca pelo lucro (moedas) que resulta diretamente da destruição do meio ambiente (árvore cortada, paisagem poluída)."
+                            feedback: "A imagem critica a busca pelo lucro (moedas) que resulta diretamente da destruição do meio ambiente (árvore cortada, paisagem poluída), mostrando que o ganho financeiro vem à custa da natureza."
                         },
                         {
                             id: "em2-c-q5",
@@ -1893,7 +1894,7 @@ export const percursos = {
                             statement: "A alternativa que melhor apresenta a finalidade dos artigos acima é:",
                             options: ["Participar de partidos políticos que defendam o meio-ambiente.", "Incentivar o público em geral a participar de ONGs.", "Divulgar, estudar, apoiar e promover atividades ecológicas e culturais.", "Tornar público o movimento Os Verdes.", "Incentivar o desenvolvimento"],
                             answer: 2,
-                            feedback: ""
+                            feedback: "Os artigos listam as finalidades do movimento, que incluem defesa do meio ambiente, proteção cultural, desenvolvimento da consciência ecológica, etc. A opção C é a que melhor resume esse conjunto de atividades."
                         },
                         {
                             id: "em2-c-q6",
@@ -1906,7 +1907,7 @@ export const percursos = {
                             statement: "O artigo acima tem por finalidade:",
                             options: ["alertar o leitor contra a febre;", "ensinar o leitor a proteger-se das infecções;", "informar o leitor sobre medicamentos novos;", "aumentar a nossa compreensão sobre o que é a febre;", "combater ideias erradas sobre a febre."],
                             answer: 3,
-                            feedback: ""
+                            feedback: "O texto apresenta uma nova perspectiva científica sobre a febre, explicando que ela não é apenas um sintoma, mas um mecanismo de defesa. O objetivo é, portanto, aprofundar o conhecimento do leitor sobre o tema."
                         },
                         {
                             id: "em2-c-q7",
@@ -1919,7 +1920,7 @@ export const percursos = {
                             statement: "O objetivo desse texto é:",
                             options: ["Informar que alguns beija-flores machos atingem velocidade extrema, para impressionar as fêmeas.", "Comparar a velocidade do beija-flor da espécie Anna com a de um avião de caça.", "Esclarecer que o beija-flor da espécie Anna é 383 vezes mais rápido que o avião.", "Apresentar os estudos feitos pela universidade de Berkeley, no que diz respeito à velocidade dos beija-flores.", "Narrar uma história especificando como alguns beija-flores conquistam as fêmeas de sua espécie."],
                             answer: 0,
-                            feedback: ""
+                            feedback: "O texto de divulgação científica apresenta uma informação principal: a alta velocidade do beija-flor, e explica a razão desse comportamento (impressionar as fêmeas)."
                         },
                         {
                             id: "em2-c-q8",
@@ -1933,7 +1934,7 @@ export const percursos = {
                             statement: "O objetivo comunicativo desse texto é:",
                             options: ["Apresentar um procedimento.", "Criticar um comportamento.", "Dar uma orientação.", "Divertir o leitor.", "Vender um produto"],
                             answer: 2,
-                            feedback: ""
+                            feedback: "A campanha utiliza uma linguagem figurada ('Tire os pés da cabeça') para orientar sobre a necessidade de eliminar os piolhos. A finalidade é instruir sobre uma ação de saúde."
                         },
                         {
                             id: "em2-c-q9",
@@ -1947,7 +1948,7 @@ export const percursos = {
                             statement: "Esse texto é direcionado ao leitor para",
                             options: ["Chamar sua atenção quanto a um perigo iminente.", "Criticar um comportamento socialmente inadequado.", "Informar a respeito de uma norma do código de trânsito.", "Persuadir a adotar um determinado comportamento.", "Sugerir que se visite o médico com regularidade"],
                             answer: 4,
-                            feedback: ""
+                            feedback: "A campanha alerta sobre os riscos de misturar medicamentos e direção, com o claro objetivo de convencer (persuadir) o motorista a não adotar essa prática perigosa."
                         },
                         {
                             id: "em2-c-q10",
@@ -1960,7 +1961,7 @@ export const percursos = {
                             statement: "De acordo com a organização interna dos gêneros, esse texto pertence à tipologia",
                             options: ["apelativa.", "dissertativa.", "informativa.", "narrativa.", "poética."],
                             answer: 4,
-                            feedback: ""
+                            feedback: "O texto é estruturado em versos, utiliza linguagem figurada (metáforas como 'vampiro infame', 'anjo enlodado') e explora sentimentos e emoções (amor, medo), características da tipologia poética."
                         }
                     ]
                 }
