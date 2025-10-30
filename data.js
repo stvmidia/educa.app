@@ -1,5 +1,4 @@
 
-
 /**
  * @typedef {'subjetiva' | 'objetiva'} QuestionType
  */
@@ -1311,13 +1310,13 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Tirinha Garfield",
-                                imageUrl: "./assets/tirinha_garfield_manha.png",
-                                content: `Jon boceja e diz que o dia está melhorando, pois a manhã foi a pior de sua vida. Garfield pensa: 'Pois é, geralmente eu não acordo tão cedo', implicando que ele acordou Jon.`
+                                imageUrl: "https://stvnews.com.br/files/imagem4.png",
+                                content: `Jon reclama que odeia segundas-feiras. Garfield está feliz e pensa 'Porque você tem que trabalhar e eu não!'`
                             },
                             statement: "A tirinha apresenta cenas entre Jon e seu gato, Garfield. Da leitura da sequência em quadrinhos, pode-se entender que:",
                             options: ["Garfield piorou a manhã de Jon.", "Jon estava tendo um bom dia.", "Jon fica mal-humorado de manhã.", "Garfield acordou bem-humorado"],
-                            answer: 0,
-                            feedback: "A fala de Jon sobre ter tido a 'pior manhã' e o pensamento de Garfield ('geralmente eu não acordo tão cedo') sugerem que Garfield foi a causa do despertar precoce e, consequentemente, do mau humor de Jon."
+                            answer: 3,
+                            feedback: "O humor da tirinha vem do contraste entre o mau humor de Jon por ser segunda-feira e a felicidade explícita de Garfield, que pensa 'Porque você tem que trabalhar e eu não!', mostrando que ele está de bom humor."
                         },
                         {
                             id: "ef2-a-q2",
@@ -1325,7 +1324,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Tirinha",
-                                imageUrl: "./assets/tirinha_mulher_zangada.png",
+                                imageUrl: "https://stvnews.com.br/files/imagem5.png",
                                 content: `Um homem pergunta a uma mulher se ela ainda está zangada. Ela, com uma faca na mão e um sorriso falso, nega e oferece café da manhã. Sua expressão corporal contradiz suas palavras.`
                             },
                             statement: "No texto, ao associar a linguagem verbal e não verbal, pode-se concluir que a mulher, em relação à atitude do homem, estava",
@@ -1339,7 +1338,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Tirinha Calvin",
-                                imageUrl: "./assets/tirinha_calvin_balanco.png",
+                                imageUrl: "https://i.imgur.com/wP0aZqW.png",
                                 content: `O pai de Calvin está visivelmente cansado e atrasado para o trabalho enquanto monta um balanço para o filho, que parece alheio à pressa do pai. No final, o pai grita com Calvin.`
                             },
                             statement: "Ao associar as linguagens verbal e não verbal, conclui-se que o homem, no último quadrinho, está",
@@ -1353,7 +1352,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Charge",
-                                imageUrl: "./assets/charge_transito_redes_sociais.png",
+                                imageUrl: "https://i.imgur.com/9C8GgJ5.jpg",
                                 content: `Charge sobre o trânsito violento. Um motorista usa o celular enquanto dirige e diz que o trânsito está tranquilo. Ao fundo, pedestres correm para não serem atropelados.`
                             },
                             statement: "Ao associar a linguagem verbal e não verbal, conclui-se que as pessoas que atravessam na faixa de pedestre estão",
@@ -1380,7 +1379,7 @@ export const percursos = {
                             descriptor: "D12",
                             supportText: {
                                 title: "Charge",
-                                imageUrl: "./assets/charge_tempo_perdido.png",
+                                imageUrl: "https://i.imgur.com/o1QhXwP.jpg",
                                 content: `Professora pergunta o tempo verbal da frase 'Eu procuro um político que trabalhe para o povo'. Um aluno responde: 'Tempo perdido!'`
                             },
                             statement: "O texto tem a finalidade principal de",
@@ -1420,7 +1419,7 @@ export const percursos = {
                             descriptor: "D12",
                             supportText: {
                                 title: "Tirinha Hagar",
-                                imageUrl: "./assets/tirinha_hagar_rude.png",
+                                imageUrl: "https://i.imgur.com/N52fB9t.jpg",
                                 content: `Helga diz que Hagar é um caso perdido. Ao ser questionada, ela explica que disse a ele que era rude comer com as mãos, e ele respondeu: 'Sem as mãos, como vou comer?'`
                             },
                             statement: "O objetivo desse texto é",
@@ -1439,7 +1438,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Dias da Semana",
-                                imageUrl: "./assets/dias_da_semana.png",
+                                imageUrl: "https://i.imgur.com/1G6f7mU.jpg",
                                 content: `Os dias da semana são representados visualmente: quinta e sexta-feira com letras inclinadas, sábado e domingo com letras rápidas e com asas, e segunda-feira com letras retas, sugerindo a velocidade com que o fim de semana passa.`
                             },
                             statement: "No texto, as letras inclinadas, as nuvenzinhas rompidas, as asas e os traços usados na representação do sábado e do domingo sugerem",
@@ -1453,7 +1452,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Propaganda",
-                                imageUrl: "./assets/propaganda_gatinho_imposto.png",
+                                imageUrl: "https://i.imgur.com/w9cQjJz.jpg",
                                 content: `Propaganda sobre imposto de renda. A imagem mostra um gatinho atravessando a rua, com o slogan 'Tem um gatinho solto nas ruas'. O texto explica que o imposto de renda, se não declarado no prazo, vira um leão.`
                             },
                             statement: "Na figura acima, a relação entre o slogan \"Tem um gatinho solto nas ruas” e a imagem ocorre de forma:",
@@ -1467,7 +1466,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Tirinha Hagar",
-                                imageUrl: "./assets/tirinha_hagar_casamento.png",
+                                imageUrl: "https://i.imgur.com/1Ylq2yI.jpg",
                                 content: `Helga pergunta o segredo de um casamento perfeito. Uma amiga descreve um homem ideal que não come, não bebe, não joga e não faz bagunça. Helga conclui que para ter um casamento perfeito, precisa casar com um homem morto.`
                             },
                             statement: "No segundo quadrinho, pode-se deduzir pela fala da personagem que",
@@ -1481,7 +1480,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Verdugo, o inacreditável",
-                                imageUrl: "./assets/tirinha_verdugo_parque.png",
+                                imageUrl: "https://i.imgur.com/xQWz6j0.jpg",
                                 content: `Personagem Verdugo está em um parque, mas foge apavorado dizendo que está sendo intoxicado porque o ar é 'limpo demais', mostrando que está acostumado com a poluição.`
                             },
                             statement: "Após a leitura da História em Quadrinhos, podemos afirmar que o personagem Verdugo",
@@ -1582,7 +1581,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Tirinha Calvin e Haroldo",
-                                imageUrl: "./assets/tirinha_calvin_bebes.png",
+                                imageUrl: "https://i.imgur.com/V7cWZL3.jpg",
                                 content: "Calvin pergunta ao pai sobre a origem dos bebês. O pai inventa uma história sobre um pterodáctilo, e Calvin acha a explicação 'maneira'."
                             },
                             statement: "Infere-se desse texto que",
@@ -1596,7 +1595,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Campanha de Vacinação Contra a Raiva",
-                                imageUrl: "./assets/campanha_vacinacao_raiva.png",
+                                imageUrl: "https://i.imgur.com/o2xVz0c.png",
                                 content: "Campanha de vacinação contra a raiva, mostrando um cão e um gato com sombras de feras, com o texto 'Seu bichinho pode virar uma fera'."
                             },
                             statement: "De acordo com esse texto, cães e gatos:",
@@ -1610,7 +1609,7 @@ export const percursos = {
                             descriptor: "D12",
                             supportText: {
                                 title: "Tirinha Calvin e Haroldo",
-                                imageUrl: "./assets/tirinha_calvin_idioma.png",
+                                imageUrl: "https://i.imgur.com/y3yL4q7.png",
                                 content: "Calvin discute com o pai sobre a mutabilidade da linguagem, ameaçando criar um código para que não se entendam mais, mas acabam se comunicando com gírias."
                             },
                             statement: "Nesse texto, a intenção do menino era",
@@ -1624,7 +1623,7 @@ export const percursos = {
                             descriptor: "D12",
                             supportText: {
                                 title: "Mentes Perigosas",
-                                imageUrl: "./assets/capa_mentes_perigosas.png",
+                                imageUrl: "https://i.imgur.com/z4B8g8Q.jpg",
                                 content: `Capa do filme 'Mentes Perigosas'. O texto ao lado resume a trama sobre uma ex-fuzileira naval que se torna professora em uma escola de periferia e usa métodos não convencionais para educar os alunos.`
                             },
                             statement: "Esse texto é uma:",
@@ -1638,7 +1637,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Infográfico: Desempenho e Premiação de Rebeca Andrade vs. Simone Biles",
-                                imageUrl: "./assets/infografico_ginastas.png",
+                                imageUrl: "https://i.imgur.com/Y3W1n5D.png",
                                 content: "Infográfico comparando as premiações e medalhas das ginastas Rebeca Andrade e Simone Biles nas Olimpíadas de Paris 2024."
                             },
                             statement: "Qual é o objetivo desse infográfico?",
@@ -1650,7 +1649,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Infográfico: Desempenho e Premiação de Rebeca Andrade vs. Simone Biles",
-                                imageUrl: "./assets/infografico_ginastas.png",
+                                imageUrl: "https://i.imgur.com/Y3W1n5D.png",
                                 content: "Infográfico comparando as premiações e medalhas das ginastas Rebeca Andrade e Simone Biles nas Olimpíadas de Paris 2024."
                             },
                             statement: "O infográfico, por ser um gênero multimodal, faz uso de variados recursos. Considerando os elementos verbais e não verbais, responda: a) É possível identificar a brasileira no infográfico? Por quê? b) Qual a nacionalidade da outra ginasta e como isso é indicado? c) A qual evento esse infográfico se refere? Justifique.",
@@ -1662,7 +1661,7 @@ export const percursos = {
                             descriptor: "D12",
                             supportText: {
                                 title: "Infográfico: Desempenho e Premiação de Rebeca Andrade vs. Simone Biles",
-                                imageUrl: "./assets/infografico_ginastas.png",
+                                imageUrl: "https://i.imgur.com/Y3W1n5D.png",
                                 content: "Infográfico comparando as premiações e medalhas das ginastas Rebeca Andrade e Simone Biles nas Olimpíadas de Paris 2024."
                             },
                             statement: "Logo abaixo das fotografias das duas ginastas, há um quadro de medalhas. Qual a intencionalidade do autor do infográfico ao apresentar esse quadro?",
@@ -1674,7 +1673,7 @@ export const percursos = {
                             descriptor: "D12",
                             supportText: {
                                 title: "Infográfico: Desempenho e Premiação de Rebeca Andrade vs. Simone Biles",
-                                imageUrl: "./assets/infografico_ginastas.png",
+                                imageUrl: "https://i.imgur.com/Y3W1n5D.png",
                                 content: "Infográfico comparando as premiações e medalhas das ginastas Rebeca Andrade e Simone Biles nas Olimpíadas de Paris 2024."
                             },
                             statement: "O texto é um infográfico jornalístico ou didático? Explique.",
@@ -1717,7 +1716,7 @@ export const percursos = {
                             descriptor: "D12",
                             supportText: {
                                 title: "Cartaz",
-                                imageUrl: "./assets/cartaz_refugiados.png",
+                                imageUrl: "https://i.imgur.com/Uf74C3z.jpg",
                                 content: "Cartaz com um par de sapatos gastos e o texto 'Vamos calçar os sapatos dos refugiados e dar o primeiro passo para entender sua situação'."
                             },
                             statement: "Nesse cartaz, o uso da imagem do calçado aliada ao texto verbal tem o objetivo de",
@@ -1731,7 +1730,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "6 Dicas para Ajudar na Escolha da Profissão",
-                                imageUrl: "./assets/dicas_profissao.png",
+                                imageUrl: "https://i.imgur.com/a42bK9T.jpg",
                                 content: "Infográfico com 6 dicas para ajudar na escolha da profissão, direcionado a jovens."
                             },
                             statement: "Esse texto é direcionado, principalmente, aos",
@@ -1745,7 +1744,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Charge",
-                                imageUrl: "./assets/charge_inclusao_digital.png",
+                                imageUrl: "https://i.imgur.com/2Yy5e4s.jpg",
                                 content: "Charge mostrando duas pessoas em situação de rua se aquecendo com o fogo de um laptop, ironizando a 'inclusão digital' enquanto a exclusão social persiste."
                             },
                             statement: "Considerando-se o contexto apresentado na charge, é correto afirmar que:",
@@ -1759,7 +1758,7 @@ export const percursos = {
                             descriptor: "D12",
                             supportText: {
                                 title: "Charge",
-                                imageUrl: "./assets/charge_desmatamento_meio_ambiente.png",
+                                imageUrl: "https://i.imgur.com/bQo2v7p.jpg",
                                 content: "Charge sobre o Dia do Meio Ambiente. Um filho entrega uma muda de árvore ao pai, que segura um machado em uma área desmatada."
                             },
                             statement: "A charge destina-se a:",
@@ -1773,7 +1772,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Charge",
-                                imageUrl: "./assets/charge_mundo_ovelhas.png",
+                                imageUrl: "https://i.imgur.com/yK5z9fD.jpg",
                                 content: "Charge em que uma pessoa se vê como a única consciente em meio a uma multidão de 'robôs' com balões de pensamento vazios."
                             },
                             statement: "De acordo com esse texto, as pessoas estão",
@@ -1800,7 +1799,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Charge Laerte",
-                                imageUrl: "./assets/charge_consumismo_tv.png",
+                                imageUrl: "https://i.imgur.com/qL3p3Pj.jpg",
                                 content: "Charge de Laerte onde um homem em uma casa de papelão diz que comprou uma TV de pendurar na parede e que agora só precisa da parede."
                             },
                             statement: "Esse texto critica",
@@ -1814,7 +1813,7 @@ export const percursos = {
                             descriptor: "D12",
                             supportText: {
                                 title: "Campanha de Trânsito",
-                                imageUrl: "./assets/campanha_ciclista.png",
+                                imageUrl: "https://i.imgur.com/fJq3n9e.jpg",
                                 content: "Campanha de conscientização no trânsito, incentivando motoristas a manterem uma distância segura de 1,5m ao ultrapassar ciclistas."
                             },
                             statement: "Esse texto é direcionado ao leitor para",
@@ -1833,7 +1832,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Tirinha Lola Andorinha",
-                                imageUrl: "./assets/tirinha_lola_andorinha.png",
+                                imageUrl: "https://i.imgur.com/1S7jX4k.jpg",
                                 content: "A andorinha Lola está presa e grita 'Socorro', mas ninguém entende. Ela então pede ajuda a uma cabra de forma criativa e, finalmente, grita 'HELP!' para ser compreendida."
                             },
                             statement: "De acordo com esse texto, o passarinho que pediu ajuda à cabra é",
@@ -1847,7 +1846,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Tirinha Maitena",
-                                imageUrl: "./assets/tirinha_maitena_paraiso.png",
+                                imageUrl: "https://i.imgur.com/x0K1w5q.jpg",
                                 content: "Uma jovem descreve a vida das avós como sendo sem opinião e sem trabalho. A avó, no entanto, descreve essa mesma vida como 'o paraíso'."
                             },
                             statement: "Sobre as funções desempenhadas pelas mulheres na sociedade e de acordo com expresso nas linguagens verbal e não verbal da charge, afirma-se que:",
@@ -1861,7 +1860,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Tirinha Menino Maluquinho",
-                                imageUrl: "./assets/tirinha_maluquinho_duendes.png",
+                                imageUrl: "https://i.imgur.com/1f4p4zJ.jpg",
                                 content: "Uma menina nega convictamente acreditar em duendes, mas em seguida diz que não se pode acreditar neles porque são muito brincalhões, contradizendo sua negação inicial."
                             },
                             statement: "A resposta dada pela menina no segundo quadrinho indica que ela está:",
@@ -1875,7 +1874,7 @@ export const percursos = {
                             descriptor: "D05",
                             supportText: {
                                 title: "Charge",
-                                imageUrl: "./assets/charge_lucro_ambiental.png",
+                                imageUrl: "https://i.imgur.com/gK9vV1k.jpg",
                                 content: "Charge critica a exploração ambiental, mostrando uma pilha de moedas sobre um toco de árvore em uma paisagem devastada."
                             },
                             statement: "Esse texto demonstra uma crítica",
@@ -1928,7 +1927,7 @@ export const percursos = {
                             descriptor: "D12",
                             supportText: {
                                 title: "Campanha de Saúde",
-                                imageUrl: "./assets/campanha_piolho.png",
+                                imageUrl: "https://i.imgur.com/dK8t6YF.jpg",
                                 content: "Campanha de prevenção contra piolhos com a frase 'Tire os pés da cabeça' e a imagem de um pé chutando um piolho."
                             },
                             statement: "O objetivo comunicativo desse texto é:",
@@ -1942,7 +1941,7 @@ export const percursos = {
                             descriptor: "D12",
                             supportText: {
                                 title: "Campanha de Trânsito",
-                                imageUrl: "./assets/campanha_remedios_direcao.png",
+                                imageUrl: "https://i.imgur.com/Q2gA8jI.jpg",
                                 content: "Campanha de trânsito alertando para não dirigir após usar medicamentos, com a imagem de um comprimido."
                             },
                             statement: "Esse texto é direcionado ao leitor para",

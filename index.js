@@ -127,7 +127,7 @@ const app = {
                 <div>
                     ${supportText.title ? `<h4 class="font-bold text-xl mb-2">${supportText.title}</h4>` : ''}
                     <div class="p-2 border rounded-lg bg-slate-50">
-                        <img src="${finalImageUrl}" alt="${altText}" class="w-full h-auto object-contain rounded-md">
+                        <img src="${finalImageUrl}" alt="${altText}" class="w-full h-auto object-contain rounded-md mx-auto" style="max-height: 80.5vh;">
                     </div>
                 </div>`;
         } else if (typeof supportText.content === 'string') {
